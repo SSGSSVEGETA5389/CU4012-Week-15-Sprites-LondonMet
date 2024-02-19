@@ -31,5 +31,5 @@ void Enemy::update(float dt, sf::Vector2f& movement)
 {
 
 	BoundaryCheck(movement);
-	move(movement);
+	move(movement * dt);
 }
